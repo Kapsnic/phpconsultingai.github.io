@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Php Consulting AI - Soluciones Inteligentes</title>
+  <style>
+    /* Reset y estilos básicos */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a1f44, #004aad);
+      color: #e0e7ff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 74, 173, 0.8);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #cbd5e1;
+      user-select: none;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #a5b4fc;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero {
+      margin-bottom: 60px;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 800;
+      color: #e0e7ff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #cbd5e1;
+    }
+
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      padding: 14px 30px;
+      font-weight: 700;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background-color: #1e40af;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+    }
+
+    .service-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 25px;
+      flex: 1 1 280px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-item h3 {
+      margin-bottom: 15px;
+      color: #a5b4fc;
+    }
+
+    .service-item p {
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .about {
+      margin-bottom: 70px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #cbd5e1;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: rgba(0, 74, 173, 0.9);
+      padding: 20px 40px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    footer a {
+      color: #94a3b8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #a5b4fc;
+    }
+
+    @media(max-width: 720px) {
+      .services {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Php Consulting AI</h1>
+  <nav>
+    <a href="#services">Servicios</a>
+    <a href="#about">Acerca de</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Soluciones Inteligentes para tu Negocio</h2>
+    <p>Transformamos tu comunicación y reservas con tecnología de inteligencia artificial avanzada.</p>
+    <a href="mailto:nicolaskaps@hotmail.com" class="btn-primary">Contáctanos</a>
+  </section>
+
+  <section id="services" class="services">
+    <div class="service-item">
+      <h3>Automatización de Mensajes</h3>
+      <p>Responde rápidamente a tus clientes con flujos conversacionales inteligentes y personalizados.</p>
+    </div>
+    <div class="service-item">
+      <h3>Gestión de Reservas</h3>
+      <p>Organiza y administra tus citas de forma eficiente con integración directa a tu calendario.</p>
+    </div>
+    <div class="service-item">
+      <h3>Análisis Inteligente</h3>
+      <p>Obtén insights valiosos para mejorar la experiencia de tus usuarios y optimizar procesos.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Acerca de Php Consulting AI</h2>
+    <p>Somos una empresa dedicada a implementar soluciones de inteligencia artificial para mejorar la comunicación y gestión de negocios. Nuestra misión es facilitar el crecimiento mediante tecnología de vanguardia adaptada a tus necesidades.</p>
+  </section>
+
+  <section id="contact" class="about">
+    <h2>Contacto</h2>
+    <p>¿Quieres saber más o solicitar una demo? Escríbenos a <a href="mailto:nicolaskaps@hotmail.com" style="color:#a5b4fc;">nicolaskaps@hotmail.com</a> o usa el botón de arriba.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Php Consulting AI. <a href="privacy-policy.html" target="_blank">Política de Privacidad</a>
+</footer>
+
+</body>
+</html>
